@@ -11,14 +11,14 @@ int main()
         while (num > 0)
         {
             last_digit = num % 10;
-            //my knowlege
-            /**  sum = sum + last_digit;
+            /**
+            sum = sum + last_digit;
             if (sum != 0)
             {
                 cout << last_digit;
             }
             */
-            //better knowlege
+            //better solution
             sum = sum * 10 + last_digit;
 
             num = num / 10;
