@@ -2,13 +2,12 @@
 using namespace std;
 int main()
 {
-    int t;
-    while (true)
+    int n;
+    while(1)
     {
-        cin >> t;
-        if (t == 42)
+        cin>>n;
+        if(n==42)
             break;
-        else
-            cout << t << endl;
+        cout<<n<<endl;
     }
 }

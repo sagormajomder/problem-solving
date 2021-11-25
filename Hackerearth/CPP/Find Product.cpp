@@ -8,7 +8,7 @@ int main()
     for (int i = 0; i < n; i++)
     {
         cin >> a[i];
-        mul = (mul * a[i]) % ((10 * 10 * 10 * 10 * 10 * 10 * 10 * 10 * 10) + 7);
+        mul = (mul * a[i]) % ((int)(pow(10, 9)) + 7);
     }
     cout << mul << endl;
 }
