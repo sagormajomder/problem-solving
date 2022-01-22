@@ -34,4 +34,5 @@ bin
 .cph
 *.bin
 .vscode
+*.code-workspace
 
