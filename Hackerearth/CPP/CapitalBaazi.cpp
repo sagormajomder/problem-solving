@@ -30,17 +30,35 @@ int main()
      cout << s1 << endl;
      */
 
-    string s;
-    getline(cin, s);
-    int length = s.length();
-    for (int i = 0; i < length; i++)
+    // string s;
+    // getline(cin, s);
+    // int length = s.length();
+    // for (int i = 0; i < length; i++)
+    // {
+    //     if (s[i] == ' ')
+    //     {
+    //         cout << endl;
+    //     }
+    //     else
+    //         // cout << (char) (a[i] - 'a' + 'A');
+    //         cout << (char)(s[i] - 32);
+    // }
+    while (true)
     {
-        if (s[i] == ' ')
+        string s;
+        cin >> s;
+        int length = s.length();
+        if (length == 0)
         {
-            cout << endl;
+            break;
         }
         else
-            // cout << (char) (a[i] - 'a' + 'A');
-            cout << (char)(s[i] - 32);
+        {
+            for (int i = 0; i < length; i++)
+            {
+                cout << (char)(s[i] - 32);
+            }
+            cout << endl;
+        }
     }
 }
