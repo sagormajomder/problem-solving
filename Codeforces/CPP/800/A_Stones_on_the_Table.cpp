@@ -4,29 +4,25 @@ int main()
 {
     int t;
     cin >> t;
-    char s[t];
-    while (t--)
+    string s;
+    int c = 0;
+    while (t != 0)
     {
-        for (int i = 0; i < t; i++)
+
+        cin >> s[c];
+        c++;
+        --t;
+    }
+
+    int length = s.length(), count = 0;
+    for (int i = 0, j = 1; i < length; i++, j++)
+    {
+        if (s[i] != s[j])
         {
-            cin >> s[i];
+            break;
         }
+        else
+            ++count;
     }
-    for (int i = 0; i < t; i++)
-    {
-        cout << s[i];
-    }
-    // int length = s.length(), count = 0;
-    // for (int i = 0, j = 1; i < length; i++, j++)
-    // {
-    //     if (s[i] == s[j])
-    //     {
-    //         ++count;
-    //     }
-    //     else
-    //     {
-    //         break;
-    //     }
-    // }
-    // cout << count << endl;
+    cout << count << endl;
 }
