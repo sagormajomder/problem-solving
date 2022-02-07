@@ -1,28 +1,25 @@
 #include <bits/stdc++.h>
+#include <iostream>
 using namespace std;
 int main()
 {
     int t;
     cin >> t;
-    string s;
-    int c = 0;
-    while (t != 0)
-    {
-
-        cin >> s[c];
-        c++;
-        --t;
-    }
-
+    string s, s1;
+    cin >> s;
     int length = s.length(), count = 0;
-    for (int i = 0, j = 1; i < length; i++, j++)
+    for (int i = 0; i < length; i++)
     {
-        if (s[i] != s[j])
+        for (int j = i + 1; j < length; j++)
         {
-            break;
+            if (s[i] == s[j])
+            {
+                count++;
+                break;
+            }
+            else
+                break;
         }
-        else
-            ++count;
     }
     cout << count << endl;
 }
