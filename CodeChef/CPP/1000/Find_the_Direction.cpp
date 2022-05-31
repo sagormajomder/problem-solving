@@ -6,9 +6,27 @@
 using namespace std;
 void sol()
 {
-  int x;
+  int x, result;
   cin >> x;
-  float dik = (float)x / 4;
+  // double result, intpart, fraction;
+  result = x % 4;
+  // fraction = modf(result, &intpart);
+  // if (fraction == 0.25)
+  //   cout << "East" << endl;
+  // else if (fraction == 0.5)
+  //   cout << "South" << endl;
+  // else if (fraction == 0.75)
+  //   cout << "West" << endl;
+  // else
+  //   cout << "North" << endl;
+  if (result == 1)
+    cout << "East" << endl;
+  else if (result == 2)
+    cout << "South" << endl;
+  else if (result == 3)
+    cout << "West" << endl;
+  else
+    cout << "North" << endl;
 }
 int main()
 {
