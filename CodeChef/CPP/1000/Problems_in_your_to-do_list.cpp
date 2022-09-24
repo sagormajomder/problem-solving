@@ -10,8 +10,15 @@ Always do a single thing at a particular time, not many
 using namespace std;
 void sol()
 {
-  int x, y;
-  cin >> x >> y;
+  int n, d, remove = 0;
+  cin >> n;
+  for (int i = 0; i < n; i++)
+  {
+    cin >> d;
+    if (d >= 1000)
+      remove++;
+  }
+  cout << remove << endl;
 }
 int main()
 {
