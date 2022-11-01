@@ -18,7 +18,7 @@ int main()
                 cout << last_digit;
             }
             */
-            //better solution
+            // better solution
             sum = sum * 10 + last_digit;
 
             num = num / 10;
