@@ -123,12 +123,8 @@ hs_err_pid*
 *.code-workspace
 *.vscode
 *node_modules
-*dist
-*.parcel-cache
 tempCodeRunnerFile.cpp
 /Java/Learning/nbproject/private/
 /Java/Learning/build/
 /Java/Networking/nbproject/private/
 /Java/Networking/build/
-
-*.DS_store
