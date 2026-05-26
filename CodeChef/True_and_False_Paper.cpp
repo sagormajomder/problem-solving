@@ -2,25 +2,24 @@
 Consistency is the key of success
 Always do a single thing at a particular time, not many
 */
-#define _USE_MATH_DEFINES
-#define ll long long int
 #include <bits/stdc++.h>
-#include <iostream>
-#include <cmath>
 using namespace std;
-void sol()
+#define ll long long int
+#define F first
+#define S second
+#define pb push_back
+void solve()
 {
   int n, k;
   cin >> n >> k;
-  cout << n - k;
-  cout << endl;
+  cout << n - k << endl;
 }
 int main()
 {
-  int t;
+  int t = 1;
   cin >> t;
   while (t--)
   {
-    sol();
+    solve();
   }
 }
