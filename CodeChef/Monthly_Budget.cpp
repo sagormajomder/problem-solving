@@ -2,17 +2,17 @@
 Consistency is the key of success
 Always do a single thing at a particular time, not many
 */
-#define _USE_MATH_DEFINES
-#define ll long long int
 #include <bits/stdc++.h>
-#include <iostream>
-#include <cmath>
 using namespace std;
-void sol()
+#define ll long long int
+#define F first
+#define S second
+#define pb push_back
+void solve()
 {
-  int x;
-  cin >> x;
-  if (x >= 750)
+  int x, y;
+  cin >> x >> y;
+  if (y * 30 <= x)
     cout << "YES" << endl;
   else
     cout << "NO" << endl;
@@ -20,9 +20,9 @@ void sol()
 int main()
 {
   int t = 1;
-  // cin >> t;
+  cin >> t;
   while (t--)
   {
-    sol();
+    solve();
   }
 }
