@@ -3,24 +3,26 @@ Consistency is the key of success
 Always do a single thing at a particular time, not many
 */
 #include <bits/stdc++.h>
-#define ll long long int
 using namespace std;
-void sol()
+#define ll long long int
+#define F first
+#define S second
+#define pb push_back
+void solve()
 {
   int x;
   cin >> x;
-  if (x > 15)
-    cout << "No";
+  if (x + 7 > 170)
+    cout << "Yes" << endl;
   else
-    cout << "Yes";
-  cout << endl;
+    cout << "No" << endl;
 }
 int main()
 {
-  int t;
-  cin >> t;
+  int t = 1;
+  // cin >> t;
   while (t--)
   {
-    sol();
+    solve();
   }
 }
