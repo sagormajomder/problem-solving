@@ -8,7 +8,6 @@ using namespace std;
 #define F first
 #define S second
 #define pb push_back
-#define bug(...) __f(#__VA_ARGS__, __VA_ARGS__)
 void solve()
 {
   int a, b, c;

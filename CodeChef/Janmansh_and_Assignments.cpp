@@ -10,16 +10,14 @@ using namespace std;
 #define pb push_back
 void solve()
 {
-  int n, x;
-  cin >> n >> x;
-  if (n % 6 != 0)
+  int x;
+  cin >> x;
+  if (x + 3 <= 10)
   {
-    cout << ((n / 6) + 1) * x;
+    cout << "Yes";
   }
   else
-  {
-    cout << (n / 6) * x;
-  }
+    cout << "No";
   cout << endl;
 }
 int main()
