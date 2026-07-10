@@ -10,17 +10,12 @@ using namespace std;
 #define pb push_back
 void solve()
 {
-  int x, y, m;
-  cin >> x >> y >> m;
-  if (x * m < y)
-    cout << "YES";
-  else
-    cout << "NO";
-  cout << endl;
+  int x, y;
+  cin >> x >> y;
+  cout << x * 10 + y * 5 << endl;
 }
 int main()
 {
-
   int t = 1;
   cin >> t;
   while (t--)

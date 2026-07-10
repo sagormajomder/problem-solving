@@ -10,19 +10,28 @@ using namespace std;
 #define pb push_back
 void solve()
 {
-  int x, y, m;
-  cin >> x >> y >> m;
-  if (x * m < y)
-    cout << "YES";
-  else
-    cout << "NO";
-  cout << endl;
+  int n, x;
+  cin >> n;
+
+  int even = 0, odd = 0;
+
+  for (int i = 0; i < n; i++)
+  {
+    cin >> x;
+    if (x % 2 == 0)
+      even++;
+    else
+      odd++;
+  }
+  even > odd ? cout << "READY FOR BATTLE" : cout << "NOT READY";
+
+  cout
+      << endl;
 }
 int main()
 {
-
   int t = 1;
-  cin >> t;
+  // cin >> t;
   while (t--)
   {
     solve();
